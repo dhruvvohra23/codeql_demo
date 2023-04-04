@@ -1,5 +1,6 @@
 from flask import Flask
 import json
+import os
 
 app = Flask(__name__)
 
@@ -21,6 +22,10 @@ def open_file():
             return {"Dummy": "Json Data", "Dudddde":"Zmon"}
         else:
             return dict(fcc_data)
+
+def dummy_function():
+    print("Hello world")
+    os.system('dir')
 
 if __name__ == "__main__":
     app.run(debug=True)
