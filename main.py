@@ -1,5 +1,6 @@
 from flask import Flask
 import json
+import os
 
 app = Flask(__name__)
 
@@ -24,6 +25,7 @@ def open_file():
 
 def dummy_function():
     print("Hello world")
+    os.system('dir')
 
 if __name__ == "__main__":
     app.run(debug=True)
