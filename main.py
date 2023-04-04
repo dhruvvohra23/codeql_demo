@@ -22,5 +22,8 @@ def open_file():
         else:
             return dict(fcc_data)
 
+def dummy_function():
+    print("Hello world")
+
 if __name__ == "__main__":
     app.run(debug=True)
